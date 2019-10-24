@@ -1,0 +1,99 @@
+<style type="text/css">
+    .inner-scroll {
+        background-color: black !important;
+    }
+    .toolbar-container {
+        background-color: black;
+     }
+</style>
+
+<ion-header >
+  <ion-toolbar [color]="dynamicColor" >
+    <ion-buttons slot="start">
+      <ion-back-button style="color:white;" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-padding" style="background-image: url('../assets/img/sky.png');
+                                    -webkit-background-size: 100%;
+                                    -moz-background-size: 100%;
+                                    -o-background-size: 100%;
+                                    background-size: 100%;
+                                    -webkit-background-size: cover;
+                                    -moz-background-size: cover;
+                                    -o-background-size: cover;
+                                    background-size: cover;
+                                    height: 100%">
+        <ion-grid>
+            <ion-row>
+                <ion-col (click)="openCard(0)">
+                    <!-- <img src="assets/img/carta_0.png"> -->
+                    <img src="assets/img/carta_0.png">
+                </ion-col>
+                <ion-col (click)="openCard(1)">
+                    <!-- <img src="assets/img/carta_1.png"> -->
+                    <img src="assets/img/carta_1.png">
+                </ion-col>
+                <ion-col (click)="openCard(3)">
+                    <!-- <img src="assets/img/carta_2.png"> -->
+                    <img src="assets/img/carta_3.png">
+                </ion-col>
+                <ion-col (click)="openCard(5)">
+                    <!-- <img src="assets/img/carta_3.png"> -->
+                    <img src="assets/img/carta_5.png">
+                </ion-col>
+
+            </ion-row>
+            <ion-row>
+                <ion-col (click)="openCard(8)">
+                    <!-- <img src="assets/img/carta_5.png"> -->
+                    <img src="assets/img/carta_8.png">
+                </ion-col>
+                <ion-col (click)="openCard(13)">
+                    <!-- <img src="assets/img/carta_8.png"> -->
+                    <img src="assets/img/carta_13.png">
+                </ion-col>
+                <ion-col (click)="openCard(21)">
+                    <!-- <img src="assets/img/carta_13.png"> -->
+                    <img src="assets/img/carta_21.png">
+                </ion-col>
+                <ion-col (click)="openCard(34)">
+                    <!-- <img src="assets/img/carta_20.png"> -->
+                    <img src="assets/img/carta_34.png">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col (click)="openCard(55)">
+                    <!-- <img src="assets/img/carta_40.png"> -->
+                    <img src="assets/img/carta_55.png">
+                </ion-col>
+                <ion-col (click)="openCard(89)">
+                    <!-- <img src="assets/img/carta_100.png"> -->
+                    <img src="assets/img/carta_89.png">
+                </ion-col>
+                <ion-col (click)="openCard(114)">
+                    <!-- <img src="assets/img/carta_0.png"> -->
+                    <img src="assets/img/carta_114.png">
+                </ion-col>
+                <ion-col (click)="openCard('cafe')">
+                    <!-- <img src="assets/img/carta_question.png"> -->
+                    <img src="assets/img/carta_cafe.png">
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col></ion-col>
+                <ion-col (click)="openCard('infinite')">
+                    <!-- <img src="assets/img/carta_cafe.png"> -->
+                    <img src="assets/img/carta_infinite.png">
+                </ion-col>
+                <ion-col (click)="openCard('question')">
+                    <!-- <img src="assets/img/carta_infinito.png"> -->
+                    <img src="assets/img/carta_question.png">
+                </ion-col>
+                <ion-col></ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

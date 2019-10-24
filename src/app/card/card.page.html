@@ -1,0 +1,10 @@
+<ion-content >
+    <div  class="center space-background" >
+        <ion-slides pager="true" [options]="slidesOpts">
+
+          <ion-slide *ngFor="let card of cards">
+            <img src="assets/img/carta_{{card}}.png" style="width: 100%; height: auto" (click)="dismiss()">
+          </ion-slide>
+        </ion-slides>
+    </div>
+</ion-content>

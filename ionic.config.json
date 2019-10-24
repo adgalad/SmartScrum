@@ -1,0 +1,7 @@
+{
+  "name": "ScrumCards",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

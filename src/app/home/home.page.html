@@ -1,0 +1,50 @@
+<style type="text/css">
+
+
+
+</style>
+
+
+<!-- <ion-header style="text-align: center;"> -->
+
+
+<!-- </ion-header> -->
+
+<ion-content style="height: 100%;">
+    <!-- <div class="ion-padding" style="height: 100%"> -->
+        <ion-grid class="grid space-background">
+            <div style="text-align: center; width: 100%">
+                <img style="width: 200px; margin: 20px; height: auto; background: transparent !important;" src="assets/img/logotipo.png">
+            </div>
+            <ion-row style="height: 42%; padding:0px">
+                        <ion-col class="menu-button-background" (click)="openCards()">
+                            <div>
+                                <img  src="assets/icon/cards.png" class="icon">
+                                <h1>Cartas</h1>
+                            </div>
+                        </ion-col>
+
+                    <ion-col class="menu-button-background" (click)="openImg('manifest')">
+                        <div>
+                            <img  src="assets/icon/manifest.png" class="icon">
+                            <h1>Manifiesto</h1>
+                        </div>
+                    </ion-col>
+            </ion-row>
+            <ion-row style="height: 42%">
+                    <ion-col class="menu-button-background" (click)="openImg('roles')">
+                        <div>
+                            <img  src="assets/icon/roles.png" class="icon">
+                            <h1>Roles</h1>
+                        </div>
+                    </ion-col>
+                    <ion-col class="menu-button-background" (click)="openImg('artifacts')">
+                        <div>
+                            <img  src="assets/icon/artifacts.png" class="icon">
+                            <h1>Artefactos</h1>
+                        </div>
+                    </ion-col>
+            </ion-row>
+        </ion-grid>
+    <!-- </div> -->
+</ion-content>

@@ -1,0 +1,14 @@
+
+<ion-content>
+    <div class="center">
+        <ion-slides pager="true" [options]="slidesOpts">
+
+            <ion-slide>
+                <img src="assets/img/image_{{id}}.png" style="width: 100%; height: auto" (click)="dismiss()">
+            </ion-slide>
+            <ion-slide *ngIf="id == 'manifest'">
+                <img src="assets/img/image_manifest2.png" style="width: 100%; height: auto" (click)="dismiss()">
+            </ion-slide>
+        </ion-slides>
+    </div>
+</ion-content>
